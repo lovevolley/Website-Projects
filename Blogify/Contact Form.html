@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBlogg-Contact Form</title>
+    <link rel="stylesheet" href="css/Form.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>Get in Touch with Us</h1>
+        <br><br><br>
+        <div id="form-wrap">
+            <form name="form" action="thankyou.html" onsubmit="return validateform()" autocomplete="off">
+                <p>Hello !</p>
+                <label for="email">Your Message:</label>
+                <textarea name="message" id="message" value="Your Message" placeholder="Type your message here..." required></textarea><br><br>
+
+                <p>Best,</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="" id="name" placeholder="Eg- Abc Xyz" required>
+                <!--Giving Error Alert to name coloumn-->
+                <!-- <div id="name_error">Please fill up your name.</div><br> -->
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="" id="email" placeholder= "Eg- abc@gmail.com" required>
+                <!--Giving Error Alert to email coloumn-->
+                <!-- <div id="email_error">Please fill up your email.</div> -->
+
+                <input type="submit" name="submit" value="Send" class="btn">
+
+            </form>
+        </div>
+    </div>
+    <script src="js/validation.js"></script>
+
+</body>
+</html>
